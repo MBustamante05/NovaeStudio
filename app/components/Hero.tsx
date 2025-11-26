@@ -19,7 +19,7 @@ export const HeroSection = () => {
         >
           <h1 className="text-6xl font-bold text-white mb-4">
             {"Create Stunning Moments".split(" ").map((word, index) => (
-              <motion.span key={index} className="inline-block mr-2"
+              <motion.span key={index} className="inline-block mr-2 text-transparent bg-clip-text bg-gradient-to-b from-indigo-500 via-purple-500 to-pink-500"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1, duration: 0.5, ease: "easeOut" }}
@@ -46,7 +46,7 @@ export const HeroSection = () => {
           {/* <button className="bg-white/10 hover:bg-white/20 text-white px-8 py-3 rounded-full border border-white/20 transition-all duration-300">
           More info →
         </button> */}
-          <ServiceBtn />
+          <ServiceBtn text="Begin Journey" />
         </motion.div>
         <FanSlider />
       </section>

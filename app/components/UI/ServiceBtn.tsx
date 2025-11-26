@@ -1,13 +1,18 @@
-export const ServiceBtn = () => {
+type ServiceBtnProps = {
+  text: string;
+  className?: string;
+  center?: boolean;
+};
+export const ServiceBtn = ({ text, className, center = true }: ServiceBtnProps) => {
   return (
-    <div className="flex items-center justify-center">
+    <div className={`flex ${center ? "items-center justify-center" : ""}`}>
       <div className="relative group">
-        <button className="relative inline-block p-px font-semibold text-white bg-neutral-800 shadow-2xl cursor-pointer rounded-2xl shadow-indigo-900 transition-all duration-300 ease-in-out hover:scale-105 active:scale-95 hover:shadow-indigo-600">
+        <button className={`relative inline-block p-px font-semibold text-white bg-neutral-800 shadow-2xl cursor-pointer rounded-2xl shadow-indigo-900 transition-all duration-300 ease-in-out hover:scale-105 active:scale-95 hover:shadow-indigo-600 ${className}`}>
           <span className="absolute inset-0 rounded-2xl bg-gradient-to-r from-yellow-800 via-purple-500 to-pink-600 p-[2px] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></span>
           <span className="relative z-10 block px-6 py-3 rounded-2xl bg-neutral-950">
             <div className="relative z-10 flex items-center space-x-3">
               <span className="transition-all duration-500 group-hover:translate-x-1.5 ">
-                Begin Journey
+                {text}
               </span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
