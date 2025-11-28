@@ -1,4 +1,5 @@
 import { ArrowRight, Mail, Phone } from "lucide-react";
+import { ServiceBtn } from "./UI/ServiceBtn";
 
 export const Form = () => {
   const inputStyles =
@@ -39,7 +40,7 @@ export const Form = () => {
         </div>
         <div className="col-span-1 h-full">
           {/* Form component content goes here */}
-          <div className="bg-neutral-900 p-8 rounded-3xl shadow-lg shadow-indigo-500/10">
+          <div className="bg-neutral-950 p-8 rounded-3xl shadow-lg border border-neutral-800 h-full">
             <form className="space-y-4 h-full">
               <div>
                 <label className={labelStyles} htmlFor="name">
@@ -63,10 +64,11 @@ export const Form = () => {
                   rows={4}
                 ></textarea>
               </div>
-              <button className="flex items-center gap-3 hover:gap-5 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-2 rounded-full transition-all cursor-pointer mt-4 shadow-lg shadow-indigo-700/20">
+              {/* <button className="flex items-center gap-3 hover:gap-5 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-2 rounded-full transition-all cursor-pointer mt-4 shadow-lg shadow-indigo-700/20">
                 <span className="ps-3">Submit</span>
                 <ArrowRight className="rounded-full bg-white p-1 text-indigo-500 w-7 h-7 me-3" />
-              </button>
+              </button> */}
+              <ServiceBtn text="Submit" center={true} />
             </form>
           </div>
         </div>
