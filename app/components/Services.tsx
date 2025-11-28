@@ -12,9 +12,9 @@ export const Services = () => {
   ];
 
   return (
-    <div className="bg-black py-16 h-screen text-white relative">
+    <div className="bg-black py-16 text-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 z-20">
-        <h2 className="text-5xl font-extrabold mb-24 text-center text-transparent bg-clip-text bg-gradient-to-b from-indigo-400 via-purple-400 to-pink-400">
+        <h2 className="text-7xl font-extrabold mb-24 text-center text-transparent bg-clip-text bg-gradient-to-b from-indigo-400 via-purple-400 to-pink-400">
           Our Services
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
